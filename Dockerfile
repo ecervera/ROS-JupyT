@@ -4,9 +4,10 @@ FROM ros:indigo-ros-base
 RUN apt-get update && apt-get install -y \
     ros-indigo-ros-tutorials \
     ros-indigo-common-tutorials \
+    python-pip
     && rm -rf /var/lib/apt/lists/
 
-RUN pip2 install --no-cache-dir notebook==5.*
+RUN pip install --no-cache-dir notebook==5.*
 
 ENV NB_USER jovyan
 ENV NB_UID 1000
