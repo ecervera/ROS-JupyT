@@ -1,4 +1,4 @@
-FROM ros:indigo-ros-base:5399f380af
+FROM ros:indigo-ros-base:master
 
 # install ros tutorials packages
 RUN apt-get update && apt-get install -y \
