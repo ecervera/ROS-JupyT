@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     python-pip \
     && rm -rf /var/lib/apt/lists/
 
-RUN pip install --no-cache-dir notebook==5.*
+RUN pip install notebook==5.*
 
 ENV NB_USER jovyan
 ENV NB_UID 1000
