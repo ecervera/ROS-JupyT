@@ -1,7 +1,7 @@
 FROM ros:indigo-ros-base:5399f380af
 
 # install ros tutorials packages
-RUN apt-get update && apt-get install -y
+RUN apt-get update && apt-get install -y \
     ros-indigo-ros-tutorials \
     ros-indigo-common-tutorials \
     && rm -rf /var/lib/apt/lists/
